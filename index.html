@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="Style.css">
+        body{
+            background: linear-gradient( to left , black, rgb(193, 8, 8));
+            font-family: Comic Sans MS;
+            font-weight: bold;
+            background-size: 400% 400%;
+            animation: mahdi forwards 7s infinite;
+        }
+
+        @keyframes mahdi {
+            0%{
+                background-position: 0% 100%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 50% 0%;
+            }
+        }
+
+
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 180px;
+            background:linear-gradient(to left , rgba(152, 11, 7, 0.908) , rgb(0, 0, 0)) ;
+            border-radius: 40px;
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: rgba(207, 207, 207, 0.1) 0px 8px 24px, rgba(186, 186, 186, 0.1) 0px 16px 56px, rgba(155, 155, 155, 0.1) 0px 24px 80px;
+            font-family: Comic Sans MS;
+            box-shadow: 0 0 20px black;
+            padding: 15px;
+            color: rgb(238, 238, 238);
+        }
+        .header{
+            font-family: Comic Sans MS;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1{
+            font-weight: bold;
+            font-size: 27px;
+            padding: 0 35px;
+            font-family: Comic Sans MS;
+        }
+        .header p{
+            font-size: 19px;
+            padding: 0 35px;
+            font-family: Comic Sans MS;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Comic Sans MS;
+        }
+        input{
+            font-family: Comic Sans MS;
+            width: 330px;
+            height: 80px;
+            border:none;
+            box-shadow: 0 0 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: rgba(198, 198, 198, 0.15) 0px 2px 8px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+
+        button{
+            font-family: Comic Sans MS;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(158, 30, 30);
+            color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            
+        }
+        button:hover{
+            box-shadow: none;
+            transition: all 0.5s;
+            cursor: pointer;
+            background-color: rgb(21, 75, 94);
+        }
+        #img{
+            border: solid 1px black;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>RQ Code Builder</h1>
+            <p>Write a paragraf or a url or something else then i make its RQ code.</p>
+        </div>
+
+        <div class="info">
+            <input placeholder="write something" id="text" type="text">
+            <button id="btn">Build its QR Code</button>
+        </div>
+
+        <div id="img">
+            <img id="image" src="Q.png">
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
