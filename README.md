@@ -1,4 +1,4 @@
-#QRcode builder
+# QRcode builder
 ___
 
 you can build a QRcode with this app
